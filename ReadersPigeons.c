@@ -29,7 +29,7 @@ typedef enum {
 	PART_9_2_2_Q,
 	PART_9_2_2_1,
 	PART_9_2_2_2,
-	ERROR,
+	ERROR_STATE,
 	END
 } state;
 
@@ -175,7 +175,7 @@ int main() {
             				current_state = PART_9_2;
 					break;
         			} else {
-					current_state = ERROR;
+					current_state = ERROR_STATE;
 					break;
 				}
                 	}
@@ -439,7 +439,7 @@ int main() {
                                         current_state = PART_9_2_2;
                                         break;
                                 } else {
-                                        current_state = ERROR;
+                                        current_state = ERROR_STATE;
                                         break;
                                 }
 			}
@@ -572,7 +572,7 @@ int main() {
                                         current_state = PART_9_2_2_2;
                                         break;
                                 } else {
-                                        current_state = ERROR;
+                                        current_state = ERROR_STATE;
                                         break;
                                 }
 			}
